@@ -79,6 +79,7 @@ export default class Comment {
     update() {
         this.el.innerText = this.text;
         this.el.style.transform = `translate(${this.x}px, ${this.y}px) scale(${this.scale})`;
+        this.title = this.text;
     }
 
     toJSON() {
