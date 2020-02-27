@@ -9,7 +9,6 @@ export default class FrameComment extends Comment {
         this.height = 0;
         this.links = [];
         this.el.className = 'frame-comment';
-        this.el.title = text;
     }
 
     linkedNodesView() {

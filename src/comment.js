@@ -20,6 +20,7 @@ export default class Comment {
         this.el.addEventListener('contextmenu', this.onContextMenu.bind(this));
         this.el.addEventListener('focus', this.onFocus.bind(this));
         this.el.addEventListener('blur', this.onBlur.bind(this));
+        this.el.title = this.text;
     
         new Draggable(this.el, () => this.onStart(), (dx, dy) => this.onTranslate(dx, dy));
     }

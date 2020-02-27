@@ -312,6 +312,7 @@ function () {
       this.el.addEventListener('contextmenu', this.onContextMenu.bind(this));
       this.el.addEventListener('focus', this.onFocus.bind(this));
       this.el.addEventListener('blur', this.onBlur.bind(this));
+      this.el.title = this.text;
       new Draggable(this.el, function () {
         return _this.onStart();
       }, function (dx, dy) {
@@ -454,7 +455,6 @@ function (_Comment) {
     _this.height = 0;
     _this.links = [];
     _this.el.className = 'frame-comment';
-    _this.el.title = text;
     return _this;
   }
 
