@@ -450,6 +450,7 @@ function (_Comment) {
     _this.height = 0;
     _this.links = [];
     _this.el.className = 'frame-comment';
+    _this.el.title = text;
     return _this;
   }
 
