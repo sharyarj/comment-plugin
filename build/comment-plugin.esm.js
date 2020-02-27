@@ -381,7 +381,7 @@ function () {
     value: function update() {
       this.el.innerText = this.text;
       this.el.style.transform = "translate(".concat(this.x, "px, ").concat(this.y, "px) scale(").concat(this.scale, ")");
-      this.title = this.text;
+      this.el.title = this.text;
     }
   }, {
     key: "toJSON",
